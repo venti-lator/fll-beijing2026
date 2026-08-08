@@ -644,10 +644,8 @@ def line_follow_2_sensors_acc(
 
     while Drive_base.distance() < distance:
 
-        # 📏 Пройденное расстояние
         dist = Drive_base.distance()
 
-        # ⚡ Разгон / торможение
         if Acc < dist < distance - Dec:
             speed = HighPower
         else:
@@ -656,7 +654,6 @@ def line_follow_2_sensors_acc(
             else:
                 speed = map_value(dist, distance - Dec, distance, HighPower, EndPower)
 
-        # 👀 Датчики
         right = ColorSensor.reflection(ColorSensor(Port.D))
         left = ColorSensor.reflection(ColorSensor(Port.C))
 
