@@ -53,9 +53,9 @@ def Choice(index):
     elif index == 5:
         Beijin_2.Run()
     elif index == 6:
-        Beijin_7.Run()
-    elif index == 7:
         Beijin_1.Run()
+    elif index == 7:
+        Beijin_7.Run()
     elif index == 8:
         Beijin_8.Run()
     elif index == 9:      #Battery
