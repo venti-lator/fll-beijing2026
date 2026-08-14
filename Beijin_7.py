@@ -5,7 +5,7 @@ def Run(): #1 : 1.5
     # PidDrive(10)
     wait(400)
     forward(0, 300, 20, 60, 65, 1000, 2)
-    LQR_pivot(41, max_power=50)
+    LQR_pivot(38, max_power=50)
     forward(0, 320, 20, 60, 60, 1000, 2)
     wait(500)
     backward(0, 680, 70, 70, 70, 510, 2)
